@@ -1,0 +1,318 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #2F2F2F;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main Container Styling */
+.MainContainer {
+    display: flex;
+    flex-flow: row;
+    height: 100vh;
+}
+/* Styling for Dark and Light theme modes */
+    
+    .ContainerLight {
+        background-color: #F1F1F1;
+    }
+    .ContainerDark {
+        background-color: #666666;
+    }
+    .TextLight {
+        color: #2F2F2F;
+    }
+    .TextDark {
+        color: #E5E5E5;
+    }
+/* Input Container Styling*/
+.InputContainer {
+    transition: 1s ease-in-out;
+    display: flex;
+    flex-flow: column;
+    min-width: 45%;
+    border-radius: 0 100px 100px 0;
+    border-right: 30px solid #CC181E;
+    padding: 25px;
+    justify-content: space-evenly;
+}
+/* Download Form Container */
+.DownloadForm {
+    display: flex;
+    flex-flow: column;
+}
+.DownloadForm > input {
+    background-color: #2F2F2F;
+    text-align: center;
+    min-height: 45px;
+    border:none;
+    border-radius: 50px;
+    min-width: 85%;
+    color: white;
+    margin: auto;
+}
+.DownloadForm > input::placeholder{
+    color: #F1F1F1;
+    font-size: clamp(1.4vh, 1rem, 1.5vw);
+}
+.DownloadForm > input:focus{
+    outline: none;
+}
+.DownloadForm > button {
+    margin: 15px auto;
+    border-radius: 25px;
+    font-size: 18px;
+    min-height: 35px;
+    border:none;
+    min-width: 160px;
+    background-color: #CC181E;
+    cursor:pointer;
+}
+.InstructionContainer {
+    transition: 1s ease-in-out;
+}
+.InstructionContainer > ul {
+    list-style-type: none;
+    text-align: left;
+    margin: -20px auto 0 auto;
+    
+}
+.InstructionContainer > ul > a {
+    text-decoration: none;
+}
+
+.InstructionContainer > ul > li > a {
+        color: black;
+    }
+/* 
+    * Information Container
+    ? Reponsible for housing the basic group information like the members
+*/
+.GroupInformationContainer {
+    display: flex;
+    flex-flow: column;
+    background-color: #2F2F2F;
+    overflow-y: auto;
+}
+.GroupInformationContainer > .InfoContainer {
+    margin: auto;
+}
+/* Header Group Information Styling */
+.InfoContainer > h1 {
+    font-size: clamp(6vh, 6.001rem, 8vw);
+    margin: auto 40px;
+    text-align: left;
+}
+/* 
+Member Information Styling
+*/
+.InfoContainer > .MemberGroup {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    margin: auto;
+}
+.MemberGroup > .MemberInfo {
+    display: flex;
+    text-align: left;
+}
+.MemberInfo > h1 {
+    font-size: clamp(2vh, 2rem, 2vw);
+    margin: auto 20px;
+}
+.MemberInfo > img {
+    max-height: 100px;
+    max-width: 100px;
+    min-height: 100px;
+    min-width: 100px;
+    border-radius: 9999px;
+    background-color: white;
+    margin: 10px 0;
+    
+}
+.MemberInfo:hover .TooltipCard {
+    visibility: visible;
+}
+
+/* Result Modal for the YTDL Result */
+.Result {
+    min-height: 100vh;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.863);
+    display: flex;
+    flex-flow: column;
+    position: fixed;
+    padding: 10px;
+    z-index: 1;
+}
+.Result > * {
+    width: 50%;
+    
+}
+.Result > img {
+    height: clamp(30%, 25%, 30%);
+    width: clamp(30%, 25%, 30%);
+    margin: 50px auto 0 auto;
+}
+.Result > h3 {
+    margin: 10px auto;
+    font-size: clamp(3vh, 2rem, 2vw);
+}
+.Result > p {
+    margin: 5px auto;
+    font-size: clamp(1.9vh, 1.8rem, 2vw);
+}
+.Result > button {
+    height: 50px;
+    width: 100px;
+    font-size: clamp(2vh, 1.5rem, 1.8vw);
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.Result > button:focus{
+    outline: none;
+}
+.DownloadableContent {
+    display: flex;
+    flex-flow: row;
+    max-height: 150px;
+    width: 80%;
+    margin: 10px auto;
+    overflow-x: auto;
+}
+.DownloadableContent > #Downloadables {
+    min-height: 50px;
+    min-width: 100px;
+    margin: 10px 10px;
+    color: white;
+    background-color: red;
+    border: none;
+    font-size: clamp(1.5vh, 1.2rem, 1.5vw);
+    border-radius: 10px;
+    cursor: pointer;
+}
+#Downloadables:focus {
+    outline: none;
+}
+
+.Loading {
+    min-height: 100vh;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.863);
+    display: flex;
+    flex-flow: column;
+    position: fixed;
+    justify-content: space-evenly;
+    z-index: 1;
+}
+.Loading > img {
+    height: 100px;
+    width: 100px;
+    margin: auto;
+}
+
+/* Tooltip */
+.TooltipCard {
+    visibility: hidden;
+    max-height: 105px;
+    max-width: 270px;
+    background-color: #E5E5E5;
+    border-radius: 15px;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    position: fixed;
+    z-index: 1;
+    filter: drop-shadow(0 6px 0.5rem rgba(0, 0, 0, 0.212));
+}
+.TooltipCard > h1 {
+    margin: auto;
+    color:#CC181E;
+    font-size: clamp(1vh, 2rem, 3vw);
+}
+/* Quick Note */
+.QuickNote {
+    min-height: 100vh;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-flow: column;
+    position: fixed;
+    justify-content: space-evenly;
+    z-index: 1;
+}
+.QuickNote > .Note {
+    background-color: #E5E5E5;
+    max-height: 500px;
+    max-width: 55%;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    border-radius: 30px;
+    filter: drop-shadow(0 6px 0.5rem rgba(0, 0, 0, 0.212));
+}
+
+.Note > h1 {
+    font-size: clamp(3vh, 2rem, 3vw);
+}
+.Note > p {
+    font-size: clamp(0.8vh, 1rem, 2vw);
+}
+.Note > button {
+    max-height: 50px;
+    min-height: 30px;
+    min-width: 100px;
+    margin: 0 auto;
+    font-size: clamp(1vh, 1rem, 2vw);
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.Note > button:focus{
+    outline: none;
+}
+/* Media Queries for Mobile Devices */
+@media screen and (max-width: 599px) {
+    .MainContainer {
+        flex-flow: column-reverse;
+        overflow-y: auto;
+    }
+    .GroupInformationContainer {
+        min-height:auto;
+        padding: 10px;
+    }
+    .InputContainer {
+        border-top: 20px solid #CC181E;
+        border-right: none;
+        border-radius: 45px 45px 0 0;
+    }
+    .MemberInfo > img {
+        min-height: 30px;
+        min-width: 80px;
+    }
+    .InstructionContainer > ul {
+        list-style-type: none;
+        text-align: left;
+        margin: -10px auto 0 auto;
+    }
+    .InstructionContainer, ul > li {
+        font-size: clamp(6px, 8px, 10px);
+    }
+    
+    .DownloadForm > button {
+        font-size: 15px;
+    }
+}

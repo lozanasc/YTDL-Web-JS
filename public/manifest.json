@@ -1,0 +1,17 @@
+{
+ "name": "Youtube Downloader",
+ "short_name": "YTDL",
+ "theme_color": "#CC181E",
+ "background_color": "#2F2F2F",
+ "display": "standalone",
+ "Scope": "",
+ "start_url": "/index.html",
+ "icons": [
+    {
+        "src": "\/icon.svg",
+        "sizes": "64x64",
+        "type": "image\/svg",
+        "density": "0.75"
+       }
+ ]
+}

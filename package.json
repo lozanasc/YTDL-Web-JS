@@ -1,0 +1,24 @@
+{
+  "name": "csc304-youtubedownloader",
+  "version": "1.0.0",
+  "description": "A CSC304 Mini-Project in Fulfilment of the Requirement for the Mid Terms",
+  "main": "YoutubeDownloader.js",
+  "scripts": {
+    "test": "echo \"Error: The Cake is a Lie 😠\"",
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "Youtube",
+    "Downloader",
+    "Converter"
+  ],
+  "author": "Sean Christian Lozana, Matt Cornejo, Rico Sojor",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "ytdl-core": "^4.4.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}

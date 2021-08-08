@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="./icon.svg" type="image/x-icon">
+    <meta name="theme-color" content="#2F2F2F">
+    <link rel='manifest' href='./manifest.json'>
+    <title>Youtube Downloader</title>
+</head>
+<body>
+    <div class="MainContainer">
+        <!-- Quick Note -->
+        <div class="QuickNote">
+            <!-- QuickNote HTML Markup goes here -->
+            <div class="Note TextLight">
+                <h1>
+                    <span style="color:#CC181E;">A</span> quick note;
+                </h1>
+                <p>
+                    When you click a Downloadable Button it doesn’t download the video directly but will direct you to a downloadable video source where you can download the video.
+                </p>
+                <button id="NoteButton" class="TextDark">
+                    I understand
+                </button>
+            </div>
+        </div>
+        <!-- Input Container -->
+        <div class="InputContainer ContainerLight TextLight">
+            <div class="SubInputContainer">
+                <div class="DownloadForm">
+                    <input type="text" placeholder="Paste or Enter Youtube URL here" id="URLInput">
+                    <button class="TextDark" id="DownloadBtn">
+                        Download
+                    </button>
+                </div>
+                <div class="InstructionContainer TextLight">
+                    <ul>
+                        <h1>Instruction: </h1>
+                        <li> Go to 
+                            <a href="http://youtube.com"> 
+                                <strong> 
+                                    Youtube.com 
+                                </strong> 
+                            </a> 
+                        </li>
+                        <li>Pick any <strong>Videos</strong> you like</li>
+                        <li>Copy the <strong>URL</strong> of the Video chosen</li>
+                        <li>Paste the <strong>URL</strong> at the Input box above</li>
+                        <li>Press <strong>Download</strong> and Voila!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Group Information Container -->
+        <div class="GroupInformationContainer TextDark">
+            <div class="InfoContainer">
+                <h1>
+                    <span style="color: #CC181E;">You</span>tube Downloader
+                </h1>
+                <!-- Member Group Container -->
+                <ul class="MemberGroup">
+                    
+                    <span class="MemberInfo TextDark">
+                        <div class="TooltipCard TextLight">
+                            <h1> Tester, Developer & Designer </h1>
+                        </div>
+                        <img src="../assets/profiles/profile0.png" alt="Member picture fr fr">
+                        <h1>
+                            Sean Christian Lozana
+                        </h1>
+                    </span>
+                    <span class="MemberInfo TextDark">
+                        <div class="TooltipCard TextLight">
+                            <h1> Tester & Designer </h1>
+                        </div>
+                        <img src="../assets/profiles/profile1.png" alt="Member picture fr fr">
+                        <h1>
+                            Matt Cornejo
+                        </h1>
+                    </span>
+                        <span class="MemberInfo TextDark">
+                            <div class="TooltipCard TextLight">
+                                <h1> Tester & Developer </h1>
+                            </div>
+                        <img src="../assets/profiles/profile2.png" alt="Member picture fr fr">
+                        <h1>
+                            Rico Sojor
+                        </h1>
+                    </span>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="../js/YoutubeDownloader.js"></script>
+</body>
+</html>
