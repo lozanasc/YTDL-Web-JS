@@ -1,9 +1,37 @@
-# Mini-Project: Youtuble Downloader  
-## Subject: CSC304 - Web Programming
-### Project Description: 
-#### Simple Youtube Downloader using `ytdl-core`
-# Members:  
-### Sean Christian Lozana - Tester, Developer & Designer
-### Matt Cornejo - Tester & Designer
-### Rico Sojor - Tester & Developer  
-###### note: We used a Free YTDL API from RapidAPI but we exhausted our limit before deploying so we had to make our own. Using ytdl-core
+# Youtube Downloader
+Made with Vanilla JS + NodeJS (ytdl-core)  
+<table>
+  <tr>
+    <th>
+      Members
+    </th>
+    <th>
+      Role
+    </th>
+  </tr>
+  <tr>
+    <td>
+      Sean Christian Lozana
+    </td>
+    <td>
+      Developer
+    </td>
+  </tr>
+    <tr>
+    <td>
+      Matt Novem Cornejo
+    </td>
+    <td>
+      Tester
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Rico Sojor
+    </td>
+    <td>
+      Designer
+    </td>
+  </tr>
+</table>
+
